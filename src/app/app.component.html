@@ -1,4 +1,6 @@
-<app-navbar></app-navbar>
-<app-leaderboard></app-leaderboard>
+<app-navbar (leaderboardClicked)="afficherLeaderboard = true"></app-navbar>
+
+<app-leaderboard *ngIf="afficherLeaderboard"></app-leaderboard>
+
 
 <router-outlet></router-outlet>

@@ -1,27 +1,66 @@
-# SuperLeague
+# Mon Projet Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+Ce projet est basé sur Angular et nécessite quelques étapes pour être configuré et exécuté correctement sur une nouvelle machine. Suivez les instructions ci-dessous pour mettre en place l'environnement de développement.
 
-## Development server
+## Prérequis
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Avant de commencer, assurez-vous que votre machine dispose des éléments suivants :
 
-## Code scaffolding
+- Node.js (version X.X.X ou supérieure)
+- npm (version X.X.X ou supérieure)
+- Angular CLI (version X.X.X ou supérieure)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Procédure d'installation
 
-## Build
+1. Clonez le dépôt sur votre machine en utilisant la commande suivante :
+   git clone <URL_DU_DEPOT>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Accédez au répertoire du projet :
+   cd nom-du-projet
 
-## Running unit tests
+3. Installez les dépendances en exécutant la commande suivante :
+   npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Lancer le serveur de développement
 
-## Running end-to-end tests
+Pour exécuter le projet et lancer le serveur de développement, suivez ces étapes :
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Dans le répertoire du projet, exécutez la commande suivante :
+   ng serve
 
-## Further help
+2. Ouvrez votre navigateur et accédez à l'URL suivante :
+   http://localhost:4200/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Le projet sera maintenant chargé et accessible dans votre navigateur.
+
+## Autres commandes utiles
+
+- Pour construire le projet pour la production :
+  ng build --prod
+
+- Pour exécuter les tests unitaires :
+  ng test
+
+- Pour exécuter les tests end-to-end :
+  ng e2e
+
+## Contribution
+
+Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
+
+1. Forker le projet
+2. Créer une nouvelle branche (`git checkout -b feature/nom-de-la-fonctionnalite`)
+3. Effectuer les modifications nécessaires
+4. Valider les modifications (`git commit -m 'Ajouter une fonctionnalité'`)
+5. Pousser les modifications vers la branche (`git push origin feature/nom-de-la-fonctionnalite`)
+6. Ouvrir une Pull Request
+
+Veuillez noter que ce projet suit les normes de contribution définies dans le fichier CONTRIBUTING.md.
+
+## Support
+
+Si vous rencontrez des problèmes ou avez des questions, veuillez ouvrir une issue dans le dépôt.
+
+---
+
+Merci d'utiliser notre projet ! Nous apprécions vos contributions et votre soutien.

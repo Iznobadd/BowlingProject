@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+
+/* Importez les styles globaux de votre application ici */
+/* ... */
+
+/* Importez le fichier CSS de Tailwind CSS */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

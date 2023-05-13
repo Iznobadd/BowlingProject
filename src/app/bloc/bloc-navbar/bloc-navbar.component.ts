@@ -2,10 +2,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  templateUrl: './bloc-navbar.component.html',
+  styleUrls: ['./bloc-navbar.component.css']
 })
-export class NavbarComponent {
+export class BlocNavbarComponent {
   @Output() leaderboardClicked = new EventEmitter<void>();
 
   onLeaderboardClick() {

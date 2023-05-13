@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeaderboardComponent } from './leaderboard.component';
+import { BlocRouletteComponent } from './bloc-roulette.component';
 
-describe('LeaderboardComponent', () => {
-  let component: LeaderboardComponent;
-  let fixture: ComponentFixture<LeaderboardComponent>;
+describe('BlocRouletteComponent', () => {
+  let component: BlocRouletteComponent;
+  let fixture: ComponentFixture<BlocRouletteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LeaderboardComponent ]
+      declarations: [ BlocRouletteComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LeaderboardComponent);
+    fixture = TestBed.createComponent(BlocRouletteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

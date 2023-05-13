@@ -7,3 +7,4 @@ services:
     volumes:
       - ./dist:/usr/share/nginx/html
     restart: always
+    network_mode: host

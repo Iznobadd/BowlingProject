@@ -1,10 +1,12 @@
 version: '3'
 services:
   angular-app:
-    image: nginx:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - GITHUB_REPO=<URL_DU_DEPOT>
     ports:
       - 8080:80
-    volumes:
-      - ./dist:/usr/share/nginx/html
     restart: always
     network_mode: host

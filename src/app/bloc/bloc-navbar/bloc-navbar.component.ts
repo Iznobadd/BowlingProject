@@ -8,7 +8,4 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class BlocNavbarComponent {
   @Output() leaderboardClicked = new EventEmitter<void>();
 
-  onLeaderboardClick() {
-    this.leaderboardClicked.emit();
-  }
 }

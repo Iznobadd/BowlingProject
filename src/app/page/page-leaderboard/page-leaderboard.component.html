@@ -1,1 +1,105 @@
-<p>page-leaderboard works!</p>
+<div class="overflow-x-auto">
+  <!-- <table class="table-auto min-w-full">
+    <thead>
+      <tr>
+        <th class="px-4 py-2">Joueur</th>
+        <th class="px-4 py-2">Frame 1</th>
+        <th class="px-4 py-2">Frame 2</th>
+        <th class="px-4 py-2">Frame 3</th>
+        <th class="px-4 py-2">Frame 4</th>
+        <th class="px-4 py-2">Frame 5</th>
+        <th class="px-4 py-2">Frame 6</th>
+        <th class="px-4 py-2">Frame 7</th>
+        <th class="px-4 py-2">Frame 8</th>
+        <th class="px-4 py-2">Frame 9</th>
+        <th class="px-4 py-2">Frame 10</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border px-4 py-2">Neograph</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">Iznobad</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">Cachacaboy</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+        <td class="border px-4 py-2">-</td>
+      </tr>
+    </tbody>
+  </table> -->
+
+  <!-- <table class="table-auto min-w-full">
+  <thead>
+    <tr>
+      <th class="px-4 py-2">Joueur</th>
+      <th class="px-4 py-2">Frame 1</th>
+      <th class="px-4 py-2">Frame 2</th>
+      <th class="px-4 py-2">Frame 3</th>
+      <th class="px-4 py-2">Frame 4</th>
+      <th class="px-4 py-2">Frame 5</th>
+      <th class="px-4 py-2">Frame 6</th>
+      <th class="px-4 py-2">Frame 7</th>
+      <th class="px-4 py-2">Frame 8</th>
+      <th class="px-4 py-2">Frame 9</th>
+      <th class="px-4 py-2">Frame 10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let joueur of joueurs">
+      <td class="border px-4 py-2">{{ joueur.nom }}</td>
+      <td class="border px-4 py-2" *ngFor="let frame of joueur.frames">{{ frame }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+  <div class="flex justify-center m-2">
+    <table class="table-auto border">
+      <thead class="border">
+        <tr>
+          <th class="px-4 py-2">Challenger</th>
+          <th colspan="16" class="px-4 py-2">Scores Super League saison 1</th>
+          <th class="px-4 py-2">Podium</th>
+        </tr>
+      </thead>
+      <tbody class="border">
+        <tr *ngFor="let joueur of joueurs" class="border">
+          <td class="px-4 py-2">{{ joueur.nom }}</td>
+          <td *ngFor="let score of joueur.score" class="px-4 py-2">
+            {{ score }}
+          </td>
+          <td class="px-4 py-2">{{ joueur.classement }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

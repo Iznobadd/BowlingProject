@@ -2,26 +2,31 @@
   <div class="container mx-auto px-4">
     <div class="flex justify-between items-center h-16">
       <div class="flex-shrink-0">
-        <a href="./" class="text-white font-bold text-lg">Super League</a>
+        <a routerLink="home" class="text-white font-bold text-lg"
+          >Super League</a
+        >
       </div>
       <div class="hidden md:block">
         <ul class="flex space-x-4">
           <li>
-            <a href="./" class="text-white hover:text-gray-300">Accueil</a>
-          </li>
-          <li>
-            <a href="./" class="text-white hover:text-gray-300">Roulette</a>
-          </li>
-          <li>
-            <a
-              href="./"
-              class="text-white hover:text-gray-300"
-              (click)="onLeaderboardClick()"
-              >Leaderboard</a
+            <a routerLink="home" class="text-white hover:text-gray-300"
+              >Accueil</a
             >
           </li>
           <li>
-            <a href="./" class="text-white hover:text-gray-300">Contact</a>
+            <a routerLink="roulette" class="text-white hover:text-gray-300"
+              >Roulette</a
+            >
+          </li>
+          <li>
+            <a routerLink="/scores" class="text-white hover:text-gray-300"
+              >Scores</a
+            >
+          </li>
+          <li>
+            <a routerLink="contact" class="text-white hover:text-gray-300"
+              >Nous contacter</a
+            >
           </li>
         </ul>
       </div>

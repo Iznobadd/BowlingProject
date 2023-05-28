@@ -1,4 +1,4 @@
-<nav class="bg-primary">
+<!-- <nav class="bg-primary">
   <div class="container mx-auto px-4">
     <div class="flex justify-between items-center h-16">
       <div class="flex-shrink-0">
@@ -30,6 +30,100 @@
           </li>
         </ul>
       </div>
+    </div>
+  </div>
+</nav> -->
+<!-- HTML template for the responsive navigation bar -->
+<nav class="bg-primary">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex-shrink-0">
+        <a routerLink="home" class="text-white font-bold text-lg"
+          >Super League</a
+        >
+      </div>
+      <div class="md:hidden text-white" (click)="toggleMenu()">
+        <svg
+          *ngIf="!isMenuOpen"
+          class="h-6 w-6 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        <svg
+          *ngIf="isMenuOpen"
+          class="h-6 w-6 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+      <div class="hidden md:block">
+        <ul class="flex space-x-4">
+          <li class="">
+            <a routerLink="home" class="text-white hover:text-gray-300"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a routerLink="roulette" class="text-white hover:text-gray-300"
+              >Roulette</a
+            >
+          </li>
+          <li>
+            <a routerLink="scores" class="text-white hover:text-gray-300"
+              >Scores</a
+            >
+          </li>
+          <li>
+            <a routerLink="contact" class="text-white hover:text-gray-300"
+              >Nous contacter</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div *ngIf="isMenuOpen" class="md:hidden">
+      <ul class="pb-6">
+        <li>
+          <a routerLink="home" class="block text-white hover:text-gray-300 py-1"
+            >Accueil</a
+          >
+        </li>
+        <li>
+          <a routerLink="roulette" class="block text-white hover:text-gray-300 py-1"
+            >Roulette</a
+          >
+        </li>
+        <li>
+          <a routerLink="scores" class="block text-white hover:text-gray-300 py-1"
+            >Scores</a
+          >
+        </li>
+        <li>
+          <a routerLink="contact" class="block text-white hover:text-gray-300 py-1"
+            >Nous contacter</a
+          >
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

@@ -6,6 +6,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./bloc-navbar.component.css']
 })
 export class BlocNavbarComponent {
-  @Output() leaderboardClicked = new EventEmitter<void>();
+  isMenuOpen: boolean = false;
 
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

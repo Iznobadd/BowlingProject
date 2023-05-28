@@ -1,0 +1,25 @@
+/* CSS styles for the responsive navigation bar */
+button svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .md\\:hidden {
+    display: none !important;
+  }
+
+  .md\\:block {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden {
+    display: none !important;
+  }
+
+  .block {
+    display: block !important;
+  }
+}
